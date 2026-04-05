@@ -8,7 +8,7 @@ import {
     LogoutOutlined,
 } from '@ant-design/icons'
 import { Outlet, useNavigate, useLocation } from 'react-router-dom'
-
+import { TagOutlined } from '@ant-design/icons'
 const { Header, Sider, Content } = Layout
 
 export default function AppLayout() {
@@ -25,6 +25,7 @@ export default function AppLayout() {
         { key: '/products', icon: <ShoppingOutlined />, label: 'Sản phẩm' },
         { key: '/orders', icon: <OrderedListOutlined />, label: 'Đơn hàng' },
         { key: '/users', icon: <UserOutlined />, label: 'Users' },
+        { key: '/coupons', icon: <TagOutlined />, label: 'Coupon' },
     ]
 
     return (
